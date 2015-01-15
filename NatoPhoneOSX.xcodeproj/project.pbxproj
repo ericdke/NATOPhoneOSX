@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C721B54819D81D3500DC47FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C721B54719D81D3500DC47FC /* AppDelegate.swift */; };
+		C721B54A19D81D3500DC47FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C721B54919D81D3500DC47FC /* Images.xcassets */; };
+		C721B54D19D81D3500DC47FC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C721B54B19D81D3500DC47FC /* MainMenu.xib */; };
+		C721B55919D81D3500DC47FC /* NatoPhoneOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C721B55819D81D3500DC47FC /* NatoPhoneOSXTests.swift */; };
+		C721B56319D833E700DC47FC /* convertText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C721B56219D833E700DC47FC /* convertText.swift */; };
+		C721B56519D8385D00DC47FC /* Nato.swift in Sources */ = {isa = PBXBuildFile; fileRef = C721B56419D8385D00DC47FC /* Nato.swift */; };
+		C721B56A19D8797A00DC47FC /* nato.icns in Resources */ = {isa = PBXBuildFile; fileRef = C721B56919D8797A00DC47FC /* nato.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C721B55319D81D3500DC47FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C721B53A19D81D3500DC47FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C721B54119D81D3500DC47FC;
+			remoteInfo = NatoPhoneOSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C721B54219D81D3500DC47FC /* NatoPhoneOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NatoPhoneOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C721B54619D81D3500DC47FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C721B54719D81D3500DC47FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C721B54919D81D3500DC47FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C721B54C19D81D3500DC47FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C721B55219D81D3500DC47FC /* NatoPhoneOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NatoPhoneOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C721B55719D81D3500DC47FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C721B55819D81D3500DC47FC /* NatoPhoneOSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatoPhoneOSXTests.swift; sourceTree = "<group>"; };
+		C721B56219D833E700DC47FC /* convertText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = convertText.swift; sourceTree = "<group>"; };
+		C721B56419D8385D00DC47FC /* Nato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nato.swift; sourceTree = "<group>"; };
+		C721B56919D8797A00DC47FC /* nato.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = nato.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C721B53F19D81D3500DC47FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C721B54F19D81D3500DC47FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C721B53919D81D3500DC47FC = {
+			isa = PBXGroup;
+			children = (
+				C721B54419D81D3500DC47FC /* NatoPhoneOSX */,
+				C721B55519D81D3500DC47FC /* NatoPhoneOSXTests */,
+				C721B54319D81D3500DC47FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C721B54319D81D3500DC47FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C721B54219D81D3500DC47FC /* NatoPhoneOSX.app */,
+				C721B55219D81D3500DC47FC /* NatoPhoneOSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C721B54419D81D3500DC47FC /* NatoPhoneOSX */ = {
+			isa = PBXGroup;
+			children = (
+				C721B56819D8520F00DC47FC /* Images */,
+				C721B54719D81D3500DC47FC /* AppDelegate.swift */,
+				C721B56219D833E700DC47FC /* convertText.swift */,
+				C721B56419D8385D00DC47FC /* Nato.swift */,
+				C721B54919D81D3500DC47FC /* Images.xcassets */,
+				C721B54B19D81D3500DC47FC /* MainMenu.xib */,
+				C721B54519D81D3500DC47FC /* Supporting Files */,
+			);
+			path = NatoPhoneOSX;
+			sourceTree = "<group>";
+		};
+		C721B54519D81D3500DC47FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C721B54619D81D3500DC47FC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C721B55519D81D3500DC47FC /* NatoPhoneOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				C721B55819D81D3500DC47FC /* NatoPhoneOSXTests.swift */,
+				C721B55619D81D3500DC47FC /* Supporting Files */,
+			);
+			path = NatoPhoneOSXTests;
+			sourceTree = "<group>";
+		};
+		C721B55619D81D3500DC47FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C721B55719D81D3500DC47FC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C721B56819D8520F00DC47FC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C721B56919D8797A00DC47FC /* nato.icns */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C721B54119D81D3500DC47FC /* NatoPhoneOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C721B55C19D81D3500DC47FC /* Build configuration list for PBXNativeTarget "NatoPhoneOSX" */;
+			buildPhases = (
+				C721B53E19D81D3500DC47FC /* Sources */,
+				C721B53F19D81D3500DC47FC /* Frameworks */,
+				C721B54019D81D3500DC47FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NatoPhoneOSX;
+			productName = NatoPhoneOSX;
+			productReference = C721B54219D81D3500DC47FC /* NatoPhoneOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C721B55119D81D3500DC47FC /* NatoPhoneOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C721B55F19D81D3500DC47FC /* Build configuration list for PBXNativeTarget "NatoPhoneOSXTests" */;
+			buildPhases = (
+				C721B54E19D81D3500DC47FC /* Sources */,
+				C721B54F19D81D3500DC47FC /* Frameworks */,
+				C721B55019D81D3500DC47FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C721B55419D81D3500DC47FC /* PBXTargetDependency */,
+			);
+			name = NatoPhoneOSXTests;
+			productName = NatoPhoneOSXTests;
+			productReference = C721B55219D81D3500DC47FC /* NatoPhoneOSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C721B53A19D81D3500DC47FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "ERIC DEJONCKHEERE";
+				TargetAttributes = {
+					C721B54119D81D3500DC47FC = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					C721B55119D81D3500DC47FC = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = C721B54119D81D3500DC47FC;
+					};
+				};
+			};
+			buildConfigurationList = C721B53D19D81D3500DC47FC /* Build configuration list for PBXProject "NatoPhoneOSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C721B53919D81D3500DC47FC;
+			productRefGroup = C721B54319D81D3500DC47FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C721B54119D81D3500DC47FC /* NatoPhoneOSX */,
+				C721B55119D81D3500DC47FC /* NatoPhoneOSXTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C721B54019D81D3500DC47FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C721B56A19D8797A00DC47FC /* nato.icns in Resources */,
+				C721B54A19D81D3500DC47FC /* Images.xcassets in Resources */,
+				C721B54D19D81D3500DC47FC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C721B55019D81D3500DC47FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C721B53E19D81D3500DC47FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C721B56519D8385D00DC47FC /* Nato.swift in Sources */,
+				C721B56319D833E700DC47FC /* convertText.swift in Sources */,
+				C721B54819D81D3500DC47FC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C721B54E19D81D3500DC47FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C721B55919D81D3500DC47FC /* NatoPhoneOSXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C721B55419D81D3500DC47FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C721B54119D81D3500DC47FC /* NatoPhoneOSX */;
+			targetProxy = C721B55319D81D3500DC47FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C721B54B19D81D3500DC47FC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C721B54C19D81D3500DC47FC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C721B55A19D81D3500DC47FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C721B55B19D81D3500DC47FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C721B55D19D81D3500DC47FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NatoPhoneOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C721B55E19D81D3500DC47FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = NatoPhoneOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C721B56019D81D3500DC47FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NatoPhoneOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NatoPhoneOSX.app/Contents/MacOS/NatoPhoneOSX";
+			};
+			name = Debug;
+		};
+		C721B56119D81D3500DC47FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NatoPhoneOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NatoPhoneOSX.app/Contents/MacOS/NatoPhoneOSX";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C721B53D19D81D3500DC47FC /* Build configuration list for PBXProject "NatoPhoneOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C721B55A19D81D3500DC47FC /* Debug */,
+				C721B55B19D81D3500DC47FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C721B55C19D81D3500DC47FC /* Build configuration list for PBXNativeTarget "NatoPhoneOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C721B55D19D81D3500DC47FC /* Debug */,
+				C721B55E19D81D3500DC47FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C721B55F19D81D3500DC47FC /* Build configuration list for PBXNativeTarget "NatoPhoneOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C721B56019D81D3500DC47FC /* Debug */,
+				C721B56119D81D3500DC47FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C721B53A19D81D3500DC47FC /* Project object */;
+}

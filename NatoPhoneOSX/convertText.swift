@@ -2,9 +2,6 @@
 //  convertText.swift
 //  NatoPhoneOSX
 //
-//  Created by ERIC DEJONCKHEERE on 28/09/2014.
-//  Copyright (c) 2014 ERIC DEJONCKHEERE. All rights reserved.
-//
 
 import Cocoa
 

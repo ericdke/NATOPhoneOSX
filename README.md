@@ -4,7 +4,9 @@ A very simple and tiny OSX app to encode/decode [NATO alphabet](https://en.wikip
 
 This was made as an exercise to learn Swift.
 
-There's nothing fancy about it - quite the contrary, it's rather minimalist and the code is childish - but I thought it could maybe give hints to absolute beginners.
+There's nothing fancy about it - quite the contrary, it's rather minimalistic - but I thought it could maybe give hints to absolute beginners.
+
+It's also the support app for the tutorial in French published on [Aya.io](http://aya.io/blog/swift-pour-os-x/).
 
 # License
 

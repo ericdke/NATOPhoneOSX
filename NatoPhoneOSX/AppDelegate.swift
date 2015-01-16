@@ -1,10 +1,6 @@
 //
 //  AppDelegate.swift
 //  NatoPhoneOSX
-//
-//  Created by ERIC DEJONCKHEERE on 28/09/2014.
-//  Copyright (c) 2014 ERIC DEJONCKHEERE. All rights reserved.
-//
 
 import Cocoa
 import AppKit
@@ -35,7 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         title.textColor = NSColor.whiteColor()
         textIN.textColor = NSColor.whiteColor()
         textOUT.textColor = NSColor.whiteColor()
-        window.backgroundColor = lightBlue
+        window.backgroundColor = NSColor.whiteColor()
         title.backgroundColor = darkBlue
         textIN.backgroundColor = darkBlue
         textOUT.backgroundColor = darkBlue
@@ -79,4 +75,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

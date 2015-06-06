@@ -5,20 +5,20 @@
 
 import Cocoa
 
-class convertText: NSObject {
-    
-    func textToChars(#text:String) -> Array<Character> {
+class ConvertText: NSObject {
+
+    func textToChars(#text: String) -> [Character] {
         return wordsToChars(words: textToWords(text: text))
     }
-    
-    func textToWords(#text:String) -> Array<String> {
-        let down:String = text.lowercaseString
-        let bucket = split(down, {$0==" "}, allowEmptySlices: false)
+
+    func textToWords(#text: String) -> [String] {
+        let down = text.lowercaseString
+        let bucket = down.componentsSeparatedByString(" ")
         return bucket
     }
-    
-    func wordsToChars(#words:Array<String>) -> Array<Character> {
-        var letters:Array<Character> = []
+
+    func wordsToChars(#words: [String] ) -> [Character] {
+        var letters = [Character]()
         for word in words {
             for char in word {
                 letters.append(char)
@@ -30,7 +30,7 @@ class convertText: NSObject {
         }
         return letters
     }
-    
+
 }
 
 

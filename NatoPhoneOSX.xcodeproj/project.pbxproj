@@ -11,7 +11,7 @@
 		C721B54A19D81D3500DC47FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C721B54919D81D3500DC47FC /* Images.xcassets */; };
 		C721B54D19D81D3500DC47FC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C721B54B19D81D3500DC47FC /* MainMenu.xib */; };
 		C721B55919D81D3500DC47FC /* NatoPhoneOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C721B55819D81D3500DC47FC /* NatoPhoneOSXTests.swift */; };
-		C721B56319D833E700DC47FC /* convertText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C721B56219D833E700DC47FC /* convertText.swift */; };
+		C721B56319D833E700DC47FC /* ConvertText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C721B56219D833E700DC47FC /* ConvertText.swift */; };
 		C721B56519D8385D00DC47FC /* Nato.swift in Sources */ = {isa = PBXBuildFile; fileRef = C721B56419D8385D00DC47FC /* Nato.swift */; };
 		C721B56A19D8797A00DC47FC /* nato.icns in Resources */ = {isa = PBXBuildFile; fileRef = C721B56919D8797A00DC47FC /* nato.icns */; };
 /* End PBXBuildFile section */
@@ -35,7 +35,7 @@
 		C721B55219D81D3500DC47FC /* NatoPhoneOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NatoPhoneOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C721B55719D81D3500DC47FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C721B55819D81D3500DC47FC /* NatoPhoneOSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatoPhoneOSXTests.swift; sourceTree = "<group>"; };
-		C721B56219D833E700DC47FC /* convertText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = convertText.swift; sourceTree = "<group>"; };
+		C721B56219D833E700DC47FC /* ConvertText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertText.swift; sourceTree = "<group>"; };
 		C721B56419D8385D00DC47FC /* Nato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nato.swift; sourceTree = "<group>"; };
 		C721B56919D8797A00DC47FC /* nato.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = nato.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,7 +81,7 @@
 			children = (
 				C721B56819D8520F00DC47FC /* Images */,
 				C721B54719D81D3500DC47FC /* AppDelegate.swift */,
-				C721B56219D833E700DC47FC /* convertText.swift */,
+				C721B56219D833E700DC47FC /* ConvertText.swift */,
 				C721B56419D8385D00DC47FC /* Nato.swift */,
 				C721B54919D81D3500DC47FC /* Images.xcassets */,
 				C721B54B19D81D3500DC47FC /* MainMenu.xib */,
@@ -224,7 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C721B56519D8385D00DC47FC /* Nato.swift in Sources */,
-				C721B56319D833E700DC47FC /* convertText.swift in Sources */,
+				C721B56319D833E700DC47FC /* ConvertText.swift in Sources */,
 				C721B54819D81D3500DC47FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

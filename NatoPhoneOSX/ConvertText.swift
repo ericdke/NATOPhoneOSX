@@ -7,7 +7,7 @@ import Cocoa
 
 class ConvertText: NSObject {
 
-    func textToChars(#text: String) -> [Character] {
+    func textToChars(#text: String) -> [String] {
         return wordsToChars(words: textToWords(text: text))
     }
 
@@ -17,11 +17,11 @@ class ConvertText: NSObject {
         return bucket
     }
 
-    func wordsToChars(#words: [String] ) -> [Character] {
-        var letters = [Character]()
+    func wordsToChars(#words: [String] ) -> [String] {
+        var letters = [String]()
         for word in words {
             for char in word {
-                letters.append(char)
+                letters.append("\(char)")
             }
             letters.append(" ")
         }

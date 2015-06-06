@@ -8,9 +8,6 @@ import AppKit
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    func applicationWillTerminate(aNotification: NSNotification) {
-    }
-
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var imageView: NSImageView!
     @IBOutlet weak var title: NSTextField!
@@ -18,7 +15,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var textOUT: NSTextField!
     @IBOutlet weak var popUpButton: NSPopUpButton!
 
-    var encoder:Bool = true
+    var encoder = true
+    let convert = ConvertText()
+    let nato = Nato()
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
 
@@ -45,7 +44,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let action = sender.titleOfSelectedItem!
         if action == "Encode" {
             encoder = true
-        }else{
+        } else {
             encoder = false
         }
 
@@ -54,9 +53,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func editField(sender: NSTextField) {
 
         let content = textIN.stringValue
-
-        let convert = ConvertText()
-        let nato = Nato()
 
         var response:String
 

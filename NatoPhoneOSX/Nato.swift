@@ -16,7 +16,7 @@ class Nato {
 
     let preserved = ["!", "?"]
 
-    func lettersToNato(#letters: [String]) -> [String] {
+    func lettersToNato(letters: [String]) -> [String] {
         var bogies = [String]()
         for letter in letters {
             if let word = encode[letter] {
@@ -33,7 +33,7 @@ class Nato {
         return bogies
     }
 
-    func wordsToLetters(#nato: [String]) -> [String] {
+    func wordsToLetters(nato: [String]) -> [String] {
         var res = [String]()
         for word in nato {
             if let char = decode[word] {

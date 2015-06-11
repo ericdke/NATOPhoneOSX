@@ -21,7 +21,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
 
-        let lightBlue:NSColor = NSColor(red:0, green:0.55, blue:0.79, alpha:1)
         let darkBlue:NSColor = NSColor(red:0, green:0.29, blue:0.56, alpha:1)
 
         textIN.editable = false
@@ -57,13 +56,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         var response:String
 
         if encoder {
-            let letters = convert.textToChars(text: content)
-            let natoWords = nato.lettersToNato(letters: letters)
-            response = join(" ", natoWords)
+            let letters = convert.textToChars(content)
+            let natoWords = nato.lettersToNato(letters)
+            response = " ".join(natoWords)
         } else {
-            let words = convert.textToWords(text: content)
-            let letters = nato.wordsToLetters(nato: words)
-            response = join("", letters)
+            let words = convert.textToWords(content)
+            let letters = nato.wordsToLetters(words)
+            response = "".join(letters)
         }
 
         textOUT.stringValue = response

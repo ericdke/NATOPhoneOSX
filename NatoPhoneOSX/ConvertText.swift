@@ -3,25 +3,23 @@
 //  NatoPhoneOSX
 //
 
-import Cocoa
+import Foundation
 
-class ConvertText: NSObject {
+class ConvertText {
 
     func textToChars(text: String) -> [String] {
         return wordsToChars(textToWords(text))
     }
 
     func textToWords(text: String) -> [String] {
-        let down = text.lowercaseString
-        let bucket = down.componentsSeparatedByString(" ")
-        return bucket
+        return text.lowercaseString.componentsSeparatedByString(" ")
     }
 
     func wordsToChars(words: [String] ) -> [String] {
         var letters = [String]()
         for word in words {
             for char in word.characters {
-                letters.append("\(char)")
+                letters.append(String(char))
             }
             letters.append(" ")
         }

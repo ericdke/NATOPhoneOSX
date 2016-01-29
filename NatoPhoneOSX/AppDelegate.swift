@@ -2,8 +2,14 @@
 //  AppDelegate.swift
 //  NatoPhoneOSX
 
+// Le code a été amélioré par rapport au tutoriel sur Aya.io lors du passage à Swift 2.2, mais les principes restent les mêmes.
+
 import Cocoa
 import AppKit
+
+enum EncoderMode {
+    case Encode, Decode
+}
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -15,36 +21,37 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var textOUT: NSTextField!
     @IBOutlet weak var popUpButton: NSPopUpButton!
 
-    var encoder = true
+    var mode: EncoderMode = .Encode
     let convert = ConvertText()
     let nato = Nato()
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
 
         let darkBlue:NSColor = NSColor(red:0, green:0.29, blue:0.56, alpha:1)
+        let white = NSColor.whiteColor()
 
-        textIN.editable = false
         window.center()
-        title.textColor = NSColor.whiteColor()
-        textIN.textColor = NSColor.whiteColor()
-        textOUT.textColor = NSColor.whiteColor()
-        window.backgroundColor = NSColor.whiteColor()
+        textIN.editable = true
+        title.textColor = white
+        textIN.textColor = white
+        textOUT.textColor = white
+        window.backgroundColor = white
         title.backgroundColor = darkBlue
         textIN.backgroundColor = darkBlue
         textOUT.backgroundColor = darkBlue
         popUpButton.removeAllItems()
         popUpButton.addItemsWithTitles(["Encode", "Decode"])
-        textIN.editable = true
-
+        
     }
 
     @IBAction func chooseAction(sender: NSPopUpButton) {
 
-        let action = sender.titleOfSelectedItem!
-        if action == "Encode" {
-            encoder = true
-        } else {
-            encoder = false
+        if let action = sender.titleOfSelectedItem {
+            if action == "Encode" {
+                mode = .Encode
+            } else {
+                mode = .Decode
+            }
         }
 
     }
@@ -52,18 +59,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func editField(sender: NSTextField) {
 
         let content = textIN.stringValue
-
-        var response:String
-
-        if encoder {
-            let letters = convert.textToChars(content)
-            let natoWords = nato.lettersToNato(letters)
-            response = " ".join(natoWords)
-        } else {
-            let words = convert.textToWords(content)
-            let letters = nato.wordsToLetters(words)
-            response = "".join(letters)
-        }
+        
+        let response:String = {
+            if mode == .Encode {
+                let letters = convert.textToChars(content)
+                return nato.sentenceFromLetters(letters)
+            } else {
+                let words = convert.textToWords(content)
+                return nato.wordsFromNato(words)
+            }
+        }()
 
         textOUT.stringValue = response
     }

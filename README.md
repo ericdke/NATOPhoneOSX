@@ -1,10 +1,12 @@
+![](https://img.shields.io/badge/Swift-2.2-orange.svg?style=flat)
+
 # NATOPhoneOSX
 
-The support app for the tutorial in French published on [Aya.io](http://aya.io/blog/swift-pour-os-x/): a very simple and tiny OSX app to encode/decode [NATO alphabet](https://en.wikipedia.org/wiki/NATO_phonetic_alphabet).
+L'application développée avec le tutoriel publié sur [Aya.io](http://aya.io/blog/swift-pour-os-x/)&nbsp;: un très simple outil pour encoder et décoder l'alphabet OTAN ([NATO](https://en.wikipedia.org/wiki/NATO_phonetic_alphabet) en anglais).
 
 # License
 
-Do whatever you want with it.
+MIT.
 
 # Screenshot
 
